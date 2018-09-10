@@ -2,17 +2,25 @@
 An opportunity to explore how to make an EV3 Robot make sounds.
 
 Authors: Dave Fisher, David Mutchler, Vibha Alangar,
-         their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues, and JUSTIN OGASAWARA.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
+import rosebotics as rb
 # ------------------------------------------------------------------------------
-# TODO: 2.
+# DONE: 2.
 #   Using the DOT trick, add code to  make_sounds  to make the robot
 #   make sounds in various ways:  Beep, Tone, Speech, Song.
 # ------------------------------------------------------------------------------
 
 def main():
+
+    What_you_sound_like = rb.Beep()
+    Other_sound = rb.Speech('take me apart')
+    my_sound = rb.Tone(200)
+    What_you_sound_like.play()
+    Other_sound.play()
+    my_sound.play()
+
     fun_song = [(392, 350, 100), (392, 350, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 700, 100),
